@@ -1,0 +1,262 @@
+
+/* Default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Judson', serif;
+  font-size: 1em;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFAFA;
+}
+
+
+
+
+
+
+/* Header / nav styles */
+.main-header {
+  position: fixed;
+  width: 100%;
+  background-color: #100c08;  
+  z-index: 3;
+}
+
+.header-logo {
+  max-height: 70px;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: wrap;
+  padding: 0px 1em;
+}
+
+/* Navigation links */
+.nav-links {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  position: absolute;
+  top: 70px;
+  left: 0px;
+  right: 0px;
+  
+  background-color: rgba(16,12,8, 0.8);
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: top center;
+  transition: all 0.5s ease-in-out;
+  
+  
+}
+
+.dropdown-open {
+  position: absolute;
+  padding-top: 1em;
+  opacity: 1;
+  transform: scaleY(1);
+
+}
+
+
+
+
+.nav-link {
+  font-size: 1.5em;
+  width: 100%;
+  padding: 20px 0px;
+  border-bottom: 1px #FFFAFA solid;
+  text-align: center;
+}
+
+
+
+/* Hamburger button */
+.menu-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-button-burger {
+  width: 50px;
+  height: 5px;
+  background: #fff;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-button-burger::before,
+.menu-button-burger::after {
+  content: '';
+  position: absolute;
+  background: #fff;
+  width: 50px;
+  height: 5px;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-button-burger::before {
+  transform: translateY(-15px);
+}
+
+.menu-button-burger::after {
+  transform: translateY(15px);
+}
+
+/* burger animation */
+
+.menu-button.open .menu-button-burger {
+  transform: translateX(50px);
+  background: transparent;
+}
+
+.menu-button.open .menu-button-burger::before {
+  transform: rotate(45deg) translate(-35px, 35px);
+
+}
+
+.menu-button.open .menu-button-burger::after {
+  transform: rotate(-45deg) translate(-35px, -35px);
+  
+}
+
+
+/* Homepage landing section */
+.main {
+  width: 100vw;
+  min-height: 95vh;
+}
+
+.landing-section {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  background-image: url('../img/landingImage.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.landing-content {
+  padding-top: 40vh;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.landing-title {
+  padding: 0.5em 1em;
+  font-size: 2em;
+  color: white;
+  text-shadow: 0.1em 0.1em 0.3em rgba(16,12,8, 0.9)
+}
+
+.landing-statement {
+  padding: 0 2em;
+  color: white;
+  text-shadow: 0.1em 0.1em 0.3em rgba(16,12,8, 0.8)
+}
+
+.landing-button {
+  all: unset;
+  align-self: flex-start;
+  border: 2px  rgba(16,12,8) solid;
+  padding: 0.6em;
+  margin: 1em 2em;
+  color: white;
+  background-color: rgba(16,12,8, 0.9);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.landing-button:hover {
+  background-color:rgba(16,12,8)
+}
+
+.landing-button:focus {
+  outline: 3px solid white;
+}
+
+
+
+
+
+
+
+/* ipad pro size screen */
+
+@media only screen and (min-width: 1024px) {
+  
+  /* Remove hamburger icon */
+  .menu-button {
+    display: none;
+  }
+
+  .header-logo {
+    max-height: 90px;
+  }
+
+  .nav-links {
+    all: initial;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    height: 90px;;
+  }
+
+  .nav-link {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    padding: 0.5em;
+    height: 90%;
+    border-bottom: none;
+    min-width: 6em;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .nav-link a {
+    transition: all 0.5s ease-in-out;
+    font-family: 'Source Sans Pro', sans-serif;;
+  }
+
+  .nav-link:hover  a {
+    color: rgba(255,250,250, 0.9);
+    transform: scale(1.05);
+  }
+
+  
+
+  
+
+  
+
+
+}

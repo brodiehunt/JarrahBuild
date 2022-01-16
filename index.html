@@ -12,26 +12,37 @@
   <meta property="og:url" content="https://www.jarrahbuild.com">
   <meta property="og:description" content="Enter description here">
   <meta property="og:image" content="url"> 
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Judson:wght@400;700&family=Playfair+Display:wght@400;600&family=Source+Sans+Pro&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/styles.css" type="text/css">
 
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li>Home</li>
-        <li>About us</li>
-        <li>Projects</li>
-        <li>Contact</li>
+  <header class="main-header">
+    <nav class="header-nav">
+      <img alt="Jarah Buld Logo" src="img/jarrah_build_logo.png" class="header-logo">
+      <div class="menu-button">
+        <div class="menu-button-burger">
+        </div>
+      </div>
+      <ul class="nav-links">
+        <li class="nav-link"><a href="index.html">Home</a></li>
+        <li class="nav-link"><a href="about-us.html">About us</a></li>
+        <li class="nav-link"><a href="projects.html">Projects</a></li>
+        <li class="nav-link"><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <section>
-      <h1>Innovation That Excites</h1>
-      <button>View Projects</button>
+    <section class="landing-section">
+      <div class="landing-content"> 
+        <h1 class="landing-title">Professional Bespoke Home Builders</h1>
+        <p class="landing-statement">We deliver quality home builds and renovations from start to finsih | Sydney and Illawara</p>
+        <button class="landing-button" aria-label="View projects">View Projects</button>
+      </div>
+      
     </section>
     <section>
       <h2>Title That Excites</h2>
@@ -68,5 +79,6 @@
 
     </nav>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>
