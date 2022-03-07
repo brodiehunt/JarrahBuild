@@ -1,0 +1,347 @@
+.main {
+  width: 100vw;
+  min-height: 95vh;
+}
+
+.landing-section {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  background-image: url('../img/kitchenvert.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.landing-content {
+  padding-top: 40vh;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.landing-title {
+  padding: 0.5em 1em;
+  font-size: 2em;
+  color: white;
+  text-shadow: 0.1em 0.1em 0.3em rgba(16,12,8, 0.9)
+}
+
+.landing-statement {
+  padding: 0 2em;
+  color: white;
+  text-shadow: 0.1em 0.1em 0.3em rgba(16,12,8, 0.8)
+}
+
+.landing-button {
+  all: unset;
+  align-self: flex-start;
+  border: 2px  rgba(16,12,8) solid;
+  padding: 0.6em;
+  margin: 1em 2em;
+  color: white;
+  background-color: rgba(16,12,8, 0.9);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.landing-button:hover {
+  background-color:rgba(16,12,8)
+}
+
+.landing-button:focus {
+  outline: 3px solid white;
+}
+
+/* About section homepage */
+
+.section {
+  min-height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-title {
+  margin-top: 2em;
+  font-size: 2.3em;
+  width: 90%;
+  text-align: center;
+}
+
+.section-content {
+  padding: 1.5em;
+  width: 90%;
+  max-width: 1024px;
+}
+
+.about-info {
+  margin-top: 1em;
+}
+
+.landing-button.about {
+  margin: 1em 0;
+}
+
+.section-img-container {
+  width: 100%;
+}
+
+.section-img-container img {
+  width: 100%;
+  height: auto;
+}
+
+
+/* Build process section */
+
+.build-process.section {
+  background-color: #F2F2F2;
+}
+
+
+.section-content.build-process {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin-bottom: 2em;
+}
+
+
+/* build process card styles */
+
+.build-process-card {
+  position: relative;
+  width: 250px;
+  height: 300px;
+  background-color: white;
+  margin: 1em;
+  border-radius: 1em;
+}
+
+.card-icon {
+  display: block;
+  text-align: center;
+  margin: 0.5em 1em 0.3em 1em;
+}
+
+.card-title {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.card-text {
+  margin: 1em;
+}
+
+.card-button {
+  position: absolute;
+  top: 285px;
+  left: 75px;
+  height: 30px;
+  width: 100px;
+  border: 2px  rgba(16,12,8) solid;
+  border-radius: 5px;
+  color: white;
+  background-color: rgba(16,12,8, 0.9);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.card-button:hover {
+  background-color: rgba(16,12,8);
+}
+
+/* Client testimony section */
+ .client-testimony.section {
+   min-height: 40vh;
+   margin-bottom: 4em;
+ }
+
+ .carousel {
+   position: relative;
+   height: 400px;
+   width: 90%;
+   max-width: 1024px;
+   
+ }
+
+ .carousel__track-container {
+   /* background: lightgreen; */
+   position: relative;
+   /* padding: 10px; */
+   height: 100%;
+   overflow: hidden;
+ }
+
+ .carousel__track {
+   position: relative;
+   padding: 0; 
+   margin: 0;
+   list-style: none;
+   height: 100%;
+   transition: transform 0.5s ease-in-out;
+ }
+
+ .carousel__slide {
+   position: absolute;
+   background-color: #F2F2F2;
+   padding: 30px 10px;
+   top:0;
+   bottom: 0;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   
+ }
+
+ .client-quote-container {
+   width: 100%;
+   height: 40%;
+   padding-left: 10px;
+ }
+
+ .client-image {
+   width: 100%;
+   height: 60%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ .client-image img {
+   max-width: 100%;
+   max-height: 100%;
+   
+ }
+
+ .carousel__button {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   height: 20px;
+   width: 20px;
+   border: 0;
+   background: transparent;
+   cursor: pointer;
+ }
+
+ .carousel__button--right {
+   right: -15px;
+ }
+
+ .carousel__button--left {
+   left: -15px;
+ }
+
+ .carousel__nav {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .carousel__indicator {
+   border: 0;
+   border-radius: 50%;
+   width: 15px;
+   height: 15px;
+   margin: 10px;
+   background: rgba(0,0,0,0.3);
+   cursor: pointer;
+ }
+
+ .carousel__indicator.current-slide {
+   background: rgba(0,0,0,0.7)
+ }
+
+ .is-hidden {
+   display: none;
+ }
+
+ 
+
+ 
+   
+   
+ 
+
+ @media only screen and (min-width: 768px) {
+  .section-content.large-layout {
+    display: flex;
+    
+  }
+
+  .landing-section {
+    background-image: url('../img/img14.jpg');
+  }
+
+  .section-content-container {
+    width: 50%;
+  }
+
+  .section-img-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .section-img-container img {
+    width: 90%;
+    
+  }
+
+  .carousel__slide {
+    flex-wrap: nowrap;
+  }
+
+  .client-quote-container {
+    width: 60%;
+  }
+
+  .client-image {
+    height: 100%;
+    width: 40%;
+  }
+
+  .carousel {
+    height: 300px;
+  }
+
+  .carousel__button--right {
+    right: -25px;
+  }
+ 
+  .carousel__button--left {
+    left: -25px;
+  }
+
+  
+ }
+
+@media only screen and (min-width: 1024px) {
+  .landing-content {
+    max-width: 900px;
+  }
+
+  .landing-title {
+    font-size: 4em;
+  }
+
+  .landing-statement {
+    font-size: 1.5em;
+    padding: 0 2.7em;
+  }
+
+  .landing-button {
+    font-size: 1em;
+    margin: 1em 4em;
+  }
+ }
