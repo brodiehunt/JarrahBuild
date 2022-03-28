@@ -15,7 +15,7 @@ allImages.forEach(img => {
   img.addEventListener('click', e => {
     body.style.overflow = 'hidden';
     e.stopPropagation()
-    modalPopup.style.display = "flex";
+    modalPopup.style.display = "block";
     modalImgElement.src = img.src;
   });
 });

@@ -35,6 +35,30 @@
   text-shadow: 0.1em 0.1em 0.3em rgba(16,12,8, 0.8)
 }
 
+.typing {
+  position: relative;
+
+}
+
+.typing::after {
+  content: "";
+  position: absolute;
+  right: -5px;
+  width: 2px;
+  height: 100%;
+  border-right: 2px solid white;
+  animation: type-cursor 0.7s infinite ease-in-out;
+}
+
+@keyframes type-cursor {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .landing-button {
   all: unset;
   align-self: flex-start;
@@ -117,7 +141,7 @@
 .build-process-card {
   position: relative;
   width: 250px;
-  height: 300px;
+  height: 320px;
   background-color: white;
   margin: 1em;
   border-radius: 1em;
@@ -140,7 +164,7 @@
 
 .card-button {
   position: absolute;
-  top: 285px;
+  top: 305px;
   left: 75px;
   height: 30px;
   width: 100px;
@@ -160,6 +184,10 @@
  .client-testimony.section {
    min-height: 40vh;
    margin-bottom: 4em;
+ }
+
+ .section-title.testimony {
+   margin-bottom: 1em;
  }
 
  .carousel {

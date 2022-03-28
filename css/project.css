@@ -31,29 +31,32 @@
   height: 100%;
   background: rgba(0,0,0,0.8);
   display: none;
-  justify-content: center;
-  align-items: center;
+ 
 }
 
 .modal-img-container {
   width: 90%;
-  max-height: 80vh;
+  height: 80vh;
   position: relative;
   margin: 0 auto;
-  max-width: 700px;
+  margin-top: 150px;
+  max-width: 900px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; 
 }
 
 .modal-img {
-  width: 100%;
-  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  z-index: 10;
 }
 .close {
   position: absolute;
-  top: -40px;
-  right: -20px;
+  top: 0;
+  right: 50%;
+  transform: translate(50%, -100%);
+
   color: white;
   font-size: 50px;
   cursor: pointer;
