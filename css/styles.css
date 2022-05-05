@@ -109,7 +109,8 @@ a {
 
 .nav-link a {
   position: relative;
-  /* font-family: 'EnvironmentBold'; */
+  font-family: 'EnvironmentRegular';
+  letter-spacing: 0.1em;
 }
 
 .nav-link a:after {
@@ -189,6 +190,7 @@ a {
 .section {
   min-height: 50vh;
   width: 100%;
+  padding: 4em 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -370,7 +372,7 @@ footer {
     display: flex; 
     align-items: center;
     justify-content: center;
-    padding: 0.5em;
+    padding: 1em;
     height: 90%;
     border-bottom: none;
     min-width: 6em;
