@@ -1,9 +1,42 @@
+/* Banner styles used on about/contact/projects page */
+
+.top-banner-section {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  background-image: url('/img/loungeroom1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.banner-title-container {
+  position: absolute;
+  top: 23vh;
+  width: 100vw;
+  margin: 0 auto;
+}
+
+.banner-title {
+  font-size: 2.5em;
+  text-align: center;
+  color: white;
+  text-shadow: 0.1em 0.1em 0.3em rgba(16,12,8, 0.9)
+}
+
+.banner-subtitle {
+  color: white;
+  text-shadow: 0.1em 0.1em 0.3em rgba(16,12,8, 0.9)
+}
+
+
 .gallery-section {
   padding-top: 50px;
 }
 .grid-container {
   width: 90vw;
-  margin: 0 auto;
+  margin: 50px auto;
   max-width: 1024px;
   display: grid;
   grid-template-columns: 1fr;
@@ -49,18 +82,61 @@
 .modal-img {
   max-width: 100%;
   max-height: 100%;
-  z-index: 10;
 }
+
 .close {
   position: absolute;
   top: 0;
   right: 50%;
   transform: translate(50%, -100%);
-
   color: white;
   font-size: 50px;
   cursor: pointer;
 }
+
+.scroll_arrow {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.arrow {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-bottom: 5px solid white;
+  border-right: 5px solid white;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: scroll 2s infinite;
+}
+
+.arrow:nth-child(2) {
+  animation-delay: -.2s;
+}
+.arrow:nth-child(3) {
+  animation-delay: -.4s;
+}
+.arrow:nth-child(2) {
+  animation-delay: -.2s;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px)
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px)
+  }
+}
+
 
 @media only screen and (min-width: 768px) {
   .grid-container {
@@ -70,5 +146,46 @@
   .grid-item-8 {
     grid-row-start: span 2;
   }
+  /* Banner styles used on about/contact/projects page */
+
+  .banner-title {
+    font-size: 3.5em;
+    text-align: center;
+    font-family: 'EnvironmentBold';
+  }
+  .banner-subtitle {
+    font-size: 1.8em;
+    text-align: center;
+  }
+
+  .banner-title-container {
+    top: 25vh;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+
+  .scroll_arrow {
+    display: block;
+  }
+  /* Banner styles used on about/projects/contact page */
+  .banner-title {
+    font-size: 4em;
+  }
+  .banner-title-container {
+    width: 65vw;
+    top: 65vh;
+  }
+
+  .top-banner-section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url('/img/loungeroom1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
 }
 

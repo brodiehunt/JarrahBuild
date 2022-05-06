@@ -19,12 +19,18 @@
 }
 
 .landing-content {
-  padding-top: 65vh;
+  padding-top: 45vh;
   width: 500px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.title-logo {
+  max-height: 100px;
+  text-shadow: 0.1em 0.1em 0.3em rgba(16,12,8, 0.9);
+  
 }
 
 .landing-title {
@@ -95,6 +101,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 
 .section-title {
@@ -110,7 +117,7 @@
 }
 
 .about-info {
-  margin-top: 1em;
+  margin-top: 1.6em;
   line-height: 1.5em;
 }
 
@@ -189,10 +196,44 @@
   background-color: rgba(16,12,8);
 }
 
+/* About us page - why choose jarrahbuild section */
+.section.why-us {
+  justify-content: center;
+  background-color: #f2f2f2;
+}
+.why-us.title {
+  text-align: center;
+  font-size: 2.3em;
+  margin-bottom: 0.5em;
+
+}
+.content-container.sec3 {
+  max-width: 1400px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 2em;
+}
+
+.card-why-us {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-title-why-us {
+  padding: 0.5em;
+}
+
+.card-content-why-us {
+  text-align: center;
+}
+
 /* Client testimony section */
  .client-testimony.section {
    min-height: 40vh;
    margin-bottom: 4em;
+   background-color: white;
  }
 
  .section-title.testimony {
@@ -201,7 +242,7 @@
 
  .carousel {
    position: relative;
-   height: 500px;
+   height: 600px;
    width: 90%;
    max-width: 1024px;
    
@@ -234,19 +275,26 @@
    height: 100%;
    display: flex;
    justify-content: center;
-   align-items: center;
+   /* align-items: center; */
    flex-wrap: wrap;
    
  }
 
  .client-quote-container {
    width: 100%;
-   height: 40%;
+   /* height: 40%; */
    padding-left: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
  }
 
  .client-quote {
   line-height: 1.5em;
+ }
+
+ .client-name {
+   margin: 0.8em 0;
  }
 
  .client-image {
@@ -319,7 +367,27 @@
   }
 
   .landing-section {
-    background-image: url('../img/img14.jpg');
+    background-image: url('../img/landing_large_screen.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+  }
+
+  .landing-content {
+    padding-top: 45vh;
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .landing-statement {
+    font-size: 1.5em;
+  }
+  
+  .title-logo {
+    max-height: 160px;  
   }
 
   .section-content-container {
@@ -364,12 +432,25 @@
     left: -25px;
   }
 
+  .card-why-us {
+    width: 50%;
+  }
+
   
  }
 
 @media only screen and (min-width: 1024px) {
   .landing-content {
     max-width: 900px;
+  }
+
+  .landing-content {
+    padding-top: 42vh;
+   
+  }
+  
+  .title-logo {
+    max-height: 150px;    
   }
 
   .landing-title {
@@ -384,5 +465,9 @@
   .landing-button {
     font-size: 1em;
     margin: 1em 4em;
+  }
+
+  .card-why-us {
+    width: 25%;
   }
  }

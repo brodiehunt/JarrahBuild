@@ -31,7 +31,7 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'EnvironmentBold','Roboto', sans-serif;
 }
 
 ul {
@@ -185,6 +185,50 @@ a {
   
 }
 
+/* Scroll arrow */
+
+.scroll_arrow {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.arrow {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-bottom: 4px solid white;
+  border-right: 4px solid white;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: scroll 2s infinite;
+}
+
+.arrow:nth-child(2) {
+  animation-delay: -.2s;
+}
+.arrow:nth-child(3) {
+  animation-delay: -.4s;
+}
+.arrow:nth-child(2) {
+  animation-delay: -.2s;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px)
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px)
+  }
+}
+
 /* Default styles for each section */
 
 .section {
@@ -204,7 +248,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 3em;
+  /* margin-top: 3em; */
 }
 
 .footer-logo {
@@ -276,21 +320,12 @@ footer {
   width: 100%;
   height: 50vh;
   position: relative;
-  overflow: hidden;
+  background-image: url('/img/loungeroom1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.banner-img {
-  min-width: 100%;
-  min-height: 100%;
-  position: absolute;
-  top: -999px;
-  bottom:-999px;
-  left: -999px;
-  right:-999px;
-  z-index: -1;
-  margin: auto;
-  
-}
 
 .banner-title-container {
   position: relative;
@@ -326,22 +361,6 @@ footer {
 
   .footer-nav-links {
     width: 240px;
-  }
-
-  /* Banner styles used on about/contact/projects page */
-
-  .banner-title-container {
-    width: 65vw;
-    top: 25vh;
-  }
-
-  .banner-title {
-    font-size: 3.5em;
-    text-align: center;
-  }
-  .banner-subtitle {
-    font-size: 1.8em;
-    text-align: center;
   }
   
 }
@@ -389,10 +408,10 @@ footer {
     transform: scale(1.05);
   }
 
-  /* Banner styles used on about/projects/contact page */
+  /* scroll arrow */
 
-  .banner-title {
-    font-size: 4em;
+  .scroll_arrow {
+    display: block;
   }
   
 }
