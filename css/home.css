@@ -157,7 +157,7 @@
 .build-process-card {
   position: relative;
   width: 250px;
-  height: 320px;
+  height: 330px;
   background-color: white;
   margin: 1em;
   border-radius: 0.5em;
@@ -180,7 +180,7 @@
 
 .card-button {
   position: absolute;
-  top: 300px;
+  top: 310px;
   left: 65px;
   height: 40px;
   width: 120px;
