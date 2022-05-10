@@ -11,7 +11,6 @@ document.addEventListener('click', () => {
 })
 
 allImages.forEach(img => {
-  console.log(allImages);
   img.addEventListener('click', e => {
     body.style.overflow = 'hidden';
     e.stopPropagation()

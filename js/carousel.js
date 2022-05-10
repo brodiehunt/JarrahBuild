@@ -7,7 +7,6 @@ const dots = Array.from(dotsNav.children);
 
 
 const slideWidth = slides[0].getBoundingClientRect().width;
-console.log("carousel js");
 
 // arrange slides next to each other;
 
