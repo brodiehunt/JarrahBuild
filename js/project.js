@@ -1,6 +1,6 @@
 // Modal view 
 
-const allImages = document.querySelectorAll(".grid-item img");
+const allImages = document.querySelectorAll(".grid-img");
 const modalPopup = document.querySelector(".modal-container");
 const modalImgElement = document.querySelector(".modal-img");
 const body = document.querySelector("body");

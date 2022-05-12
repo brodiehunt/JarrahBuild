@@ -315,40 +315,6 @@ footer {
   width: 100%;
 }
 
-/* Banner styles used on about/contact/projects page */
-
-.top-banner-section {
-  width: 100%;
-  height: 50vh;
-  position: relative;
-  background-image: url('/img/loungeroom1.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-
-.banner-title-container {
-  position: relative;
-  top: 23vh;
-  width: 90vw;
-  margin: 0 auto;
-}
-
-.banner-title {
-  font-size: 2.5em;
-  color: white;
-  text-shadow: 0.1em 0.1em 0.3em rgba(16,12,8, 0.9)
-}
-
-.banner-subtitle {
-  color: white;
-  text-shadow: 0.1em 0.1em 0.3em rgba(16,12,8, 0.9)
-}
-
-
-
-
 /* Ipad size screen */
 
 @media only screen and (min-width: 768px) {
@@ -401,7 +367,6 @@ footer {
 
   .nav-link a {
     transition: all 0.5s ease-in-out;
-    /* font-family:'EnvironmentRegular';; */
   }
 
   .nav-link:hover  a {

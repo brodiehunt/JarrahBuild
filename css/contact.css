@@ -41,9 +41,8 @@
 }
 
 .form-input.textarea {
-  height: 70px;
+  height: 100px;
   width: 100%;
-  /* resize: vertical; */
 }
 
 .form-control-container.button {
